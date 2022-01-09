@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `One Piece Pirates`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
@@ -16,6 +16,11 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    {
+      resolve: "gatsby-source-wordpress",
+      options: {
+        url: "http://strawhatpirates.local/graphql"
+    },},
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
